@@ -1,0 +1,9 @@
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/zoom/', include('zoom_integration.urls')),
+    path('api/user/', include('user.urls')),
+    path('api/resources/', include('api.urls')),
+]
