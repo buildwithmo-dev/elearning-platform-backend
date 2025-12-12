@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import resources
+from .views import resources, course_categories, category_sections
 
 urlpatterns = [
-    path("slides/", resources),
+    path("resources/slides/", resources),
     # path("resources/<int:resource_id>/", resource_detail),
+    path("courses/categories/", course_categories),
+    path("courses/category-section", category_sections)
 ]

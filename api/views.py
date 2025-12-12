@@ -19,3 +19,21 @@ def resources(request):
 
     except Exception as e:
         return Response({"error": str(e)}, status=500)
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def course_categories(request):
+    try:
+        res = supabase.table("course_categories").select("*").execute()
+        return Response(res.data)
+    except Exception as e:
+        return Response({"error as:", str(e)})
+    
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def category_sections(request):
+    try:
+        res = supabase.table("course_categories").select("*").execute()
+        return Response(res.data)
+    except Exception as e:
+        return Response({"error as:", str(e)})
