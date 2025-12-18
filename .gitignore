@@ -1,0 +1,22 @@
+.env# Django sensitive files
+.env
+*.env
+db.sqlite3
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Zoom & API secrets
+*.log
+zoom_secret.txt
