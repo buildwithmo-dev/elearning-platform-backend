@@ -38,3 +38,7 @@ typing_extensions==4.15.0
 urllib3==2.6.1
 websockets==15.0.1
 yarl==1.22.0
+# --- ADD THESE FOR VERCEL + SUPABASE ---
+dj-database-url==3.1.2
+psycopg2-binary==2.9.11
+whitenoise==6.12.0
