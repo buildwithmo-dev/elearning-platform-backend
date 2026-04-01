@@ -110,7 +110,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://elearning-platform-frontend-one.vercel.app/",
+    "http://localhost:5173",
+    "https://elearning-platform-frontend-one.vercel.app",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
